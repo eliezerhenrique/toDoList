@@ -1,0 +1,89 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 0.75rem;
+  width: 46rem;
+  height: 4.5rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.radioTask {
+  appearance: none;
+  cursor: pointer;
+  background: var(--gray-400);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioTask:checked {
+  content: ' ';
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--purple);
+  background-image: url('../assets/check.svg');
+  background-position: center;
+  color: white;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+}
+
+.radioTask:checked:before {
+  opacity: 1;
+}
+
+.lblTask {
+  width: 36.5rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  line-height: 140%;
+  flex: none;
+  font-weight: 400;
+  font-family: 'Inter';
+  order: 1;
+}
+
+.btnTrash {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  flex: none;
+  order: 2;
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+
+  transition: 0.2;
+}
+
+.btnTrash svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btnTrash:active {
+  transform: scale(1.1);
+}
+
+.btnTrash:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+  width: 1.5rem;
+  height: 1.5rem;
+}

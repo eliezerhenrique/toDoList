@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.375rem;
+  margin-top: -1.687rem;
+}
+
+.task {
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  border: 1px solid var(--gray-700);
+  height: 100%;
+  width: 39.875rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.btnTask {
+  margin-left: 1rem;
+  height: 3.375rem;
+  background: var(--blueDark);
+  height: 3.375rem;
+  width: 5.625rem;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.btnTask:hover {
+  background: var(--blue);
+}
+
+.btnTask svg {
+  margin-left: 0.3rem;
+}
+
+.containerList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5.687rem;
+  gap: 1.5rem;
+  position: absolute;
+  left: calc(50% - 46rem/2);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0;
+  width: 46rem;
+  height: 1.187rem;
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.createTask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.createTask h5 {
+  color: var(--blue);
+}
+
+span {
+  color: var(--gray-100);
+  flex-direction: row;
+  gap: 0.625rem;
+  font-size: 0.8rem;
+  width: 5rem;
+  height: 1rem;
+  padding: 2px 8px;
+  margin-left: 0.5rem;
+  background: var(--gray-400);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.taskFinish {
+  display: flex;
+  float: right;
+}
+
+.taskFinish h5 {
+  color: var(--purple);
+}
+
+.empty {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.687rem;
+  height: 15,25rem;
+  width: 46rem;
+  gap: 1rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
